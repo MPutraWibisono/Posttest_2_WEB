@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/styledaf.css">
+    <link rel="shortcut icon" href="images/kebabcrop.png" type="image/x-icon">
+    <title>Daftar Akun</title>
+</head>
+<body>
+    <section class="main" style='background-image: url("images/kebabcrop.png");'>
+        <nav></nav>
+            <div id='form'>
+                <h1>DAFTAR AKUN</h1>
+                <form id='daftarform' method="POST">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username"  placeholder="Isi Username" required><br>
+                    <p></p>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="Isi Password" required><br>
+                    <p></p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Isi Email" required><br>
+                    <p></p>
+                    <p>Apa status anda?</p>
+                    <input type="radio" id="si" name="stat" value="Mahasiswa SI" onclick="showInput()" required>
+                    <label for="si">Mahasiswa SI</label><br>
+                    <p></p>
+                    <input type="radio" id="nonsi" name="stat" value="Non Mahasiswa SI" onclick="showInput()" required>
+                    <label for='nonsi'>Non Mahasiswa SI</label><br>
+                    <p></p>
+                    <div id='container' style='display:none;'>
+                        <label for="angkatan">Angkatan berapa?</label>
+                        <select id="angkatan" name="angkat" form='daftarform' required>
+                            <option selected="selected" value = NULL>NULL</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                        </select>
+                    </div>
+                    <p></p>
+                    <div id='container2' style='display:none;'>
+                        <input type="checkbox" id='terms' name='syarat' value='agree' onclick="showInput()" form='daftarform' required>
+                        <label for="terms">Saya setuju dengan <a target='_blank' href="terms.html" >terms</a> yang berlaku. </label>
+                        </div>
+                    <p></p>
+                    <button type="submit" id='daform' value="Daftar" onclick="addItem()">Daftar</button><br>
+                </form>
+            </div>
+    </section>
+    <footer>
+        <!-- <a href="#">Siap makan setiap hari.</a> -->
+        <p>&#169;Copyright 2023 Kebabned.</p>
+    </footer>
+    <script src="js/daftar.js"></script>
+</body>
+</html>

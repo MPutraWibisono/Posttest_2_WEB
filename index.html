@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/styleindex.css">
+    <link rel="shortcut icon" href="images/kebabcrop.png" type="image/x-icon">
+	<title>Login Page</title>
+</head>
+<body>
+	<section class="main" style='background-image: url("images/kebabcrop.png");'>
+	<nav></nav>
+		<div>
+			<h1>LOGIN PAGE</h1>
+			<?php if($error) { ?>
+				<p><?php echo $error; ?></p>
+			<?php } ?>
+			<form method="POST" id="former">
+				<label>Username:</label>
+				<input type="text" id="user" placeholder="Isi Username" required><br><br>
+				<label>Password:</label>
+				<input type="password" id="pass" placeholder="Isi Password" required><br><br>
+				<button type="submit" name="submit" value="Login">SUBMIT</button>
+			</form>
+			<br>
+			<a href="daftar.html">BELUM DAFTAR?</a>
+		</div>
+	</section>
+	<footer>
+        <!-- <a href="#">Siap makan setiap hari.</a> -->
+        <p>&#169;Copyright 2023 Kebabned.</p>
+    </footer>
+	<script src="js/index.js"></script>
+</body>
+</html>

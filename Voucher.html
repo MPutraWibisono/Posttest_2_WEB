@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Kebabned Indonesia</title>
+	<link rel="stylesheet" href="css/stylevou.css">
+    <link rel="shortcut icon" href="images/kebabcrop.png" type="image/x-icon">
+</head>
+<body> 
+    <section class="main">
+        <nav ">
+            <!--logo-->
+            <a href="Beranda.html" class="logo"><img src="images/kebabcrop.png"/>
+            </a>
+            <ul class="menu">
+                <li><a href="Beranda.html">Home</a></li>
+                <li><a href="HowToOrder.html">How to Order</a></li>
+                <li><a href="Voucher.html">Voucher</a></li> 
+                <li><a href="AboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
+        <!--main-content-->
+        <div class="home-content">
+            <div class="title">Silakan Masukkan Data</div>
+                <form action="#" id="form1">
+                    <!-- <h1>Silakan Masukkan untuk Voucher</h1> -->
+                        <label for="na">Nama :</label>
+                        <input type="text" id="na" placeholder="Masukkan Nama" required><br>
+                        <label for="thl">Tahun lahir :</label>
+                        <span style="height: 200px; overflow: auto;">
+                            <select id="thl"></select>
+                        </span><br>
+                        <label for="em">Email :</label>
+                        <input type="email" id="em" placeholder="Masukkan Email" required><br>
+
+                        <span style="display: flex; flex-direction: column;">
+                            <label for="nw">Alasan Ingin Mendapatkan Voucher :</label>
+                            <textarea id="nw" rows="5"cols="30" placeholder="Masukkan Alasan Kamu" required></textarea>    
+                        </span>
+                        
+                        <span>Menu yang disukai :(opsional)</span>
+                        <div>
+                            <input type="checkbox" name="nahh" id="ori" value="original">
+                            <label for="ori">Original</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="nahh" id="Kornet" value="kornet">
+                            <label for="Kornet">Kornet</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="nahh" id="Tempe" value="tempe">
+                            <label for="Tempe">Tempe</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="nahh" id="Salad" value="salad">
+                            <label for="Salad">Salad</label>
+                        </div>
+
+                    
+                    <div>
+                        <label for="su">Selfie dengan produk Kebabned</label><br>
+                        <input type="file" id="su" required>
+                    </div>
+                    <div style="cursor: pointer;">
+                        <label >Apakah kamu suka dengan rasanya?(opsional)</label><br>
+                        <label for="ra">SUKA</label>
+                        <input type="radio" id="ra" name="ya" value="YES"><br>
+                        <label for="radi">BIASA AJA</label>
+                        <input type="radio" id="radI" name="ya" value="BIASA"><br>
+                        <label for="rad">TIDAK JUGA</label>
+                        <input type="radio" id="rad" name="ya" value="NO">
+                    </div>
+                        <br>
+                        <label for="gee">
+                            <input type="submit" id="gee" value="Kirim" onclick="tambah()">
+                        </label>
+                </form>
+        </div>
+    </section>
+    <footer>
+        <!-- <a href="#">Siap makan setiap hari.</a> -->
+        <p>&#169;Copyright 2023 Kebabned.</p>
+    </footer>
+</body>
+<script src="js/voucher.js"> </script>
+</html>

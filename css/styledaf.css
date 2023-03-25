@@ -1,0 +1,62 @@
+body{
+    margin:0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration:none;
+    font-weight: bold;
+}
+.main{
+    width:100%;
+    height:100vh;
+    background-color:rgba(255, 238, 0, 0.514);
+    background-image: url("images/kebabcrop.png");
+    background-size: 338px;
+    position: relative;
+}
+#form{
+    position:relative;
+    background-color: rgba(255, 136, 0, 0.945);
+    align-content: center;    
+    text-align: center;
+    top: 100px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-width: 10px;
+    border-radius: 100px;
+}
+nav{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    background-color:rgba(255, 166, 0, 0.637);
+    /* box-shadow: 2px 2px 20px rgb(255, 255, 255); */
+    z-index: 1;
+    width:100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+}
+form{
+    display: block;
+    text-align: center;
+}
+footer{
+    background-color: firebrick;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5%;
+    border-top: 1px solid rgba(167,167,167,0.2);
+}
+footer a,
+footer p{
+    color:#ffffff;
+}
